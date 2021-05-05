@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+        function myFunction()
+        {
+            document.getElementById("demo").innerHTML = "My first JavaScript function";
+        }
+        </script>
+
+    </head>
+    <body>
+        <p>
+            JavaScript 能够直接写入HTML输出流中：
+        </p>
+        <script>
+        document.write("<h1>This is a heading.</h1>");
+        document.write("<p>This is a paragraph.</p>");
+        </script>
+        <p>
+            你只能在HTMl输出流中使用<strong>document.write</strong>。
+            如果你在你的文档已加载后使用它（比如函数中），会覆盖整个文档。
+        </p>
+
+</br>
+</br>
+</br>
+</br>
+//函数定义在head里面
+<h1>My Web page</h1>
+<p id = "demo"> A paragraph</p>
+<button type ="button" onclick="myFunction()">Try it</button>
+
+</br>
+</br>
+</br>
+</br>
+
+<h1>My Web page</h1>
+<p id = "demo2"> A paragraph</p>
+<button type="button" onclick="myFunction2()">Try it</button>
+<script>
+function myFunction2()
+{
+    document.getElementById("demo2").innerHTML = "My first Javascript Function"；
+}
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+    </body>
+
+</html>
