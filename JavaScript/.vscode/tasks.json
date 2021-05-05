@@ -1,0 +1,18 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "0.1.0",
+   
+    "command": "",
+    "isShellCommand": false,
+    "args": ["${file}"],
+    "showOutput": "always",
+    "windows": {
+        "command": "C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe"
+    },
+    "tasks": [{
+        "taskName": "webserver",
+        "isBuildCommand": true,
+        "showOutput": "always"
+    }]
+}

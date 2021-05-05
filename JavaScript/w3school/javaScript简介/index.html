@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <p>
+        javaScript 能够直接写入HTML输出流中：</p>
+    <script>
+            document.write("<h1>This is a heading </h1>")
+            document.write("<p>This is a paragraph.</p>")
+            </script>
+    <p>你只能在Html输出流中使用<strong>document.write</strong> 如果你在文档已经加载后使用它(比如函数中),会覆盖整个文档。
+    </p>
+    </br>
+    </br>
+    </br>
+    <h1>我的第一段 javaScript</h1>
+    <p>javaScript 能够对事件作出反应。比如对按钮的点击:</p>
+    <button type="button" onclick="alert('Welcome!')">点击这里</button>
+
+    </br>
+    </br>
+    </br>
+    <h1>我的第一段 javaScript</h1>
+    <p id="demo"> javaScript 能改变HTML的元素内容。</p>
+    <script>
+function myFunction()
+{
+    x = document.getElementById("demo");
+    x.innerHTML = "Hello javaScript!";
+
+}
+</script>
+    <button type="button" onclick="myFunction()">点击这里</button> 
+    </br>
+    </br>
+    </br>
+<script>
+    function changeImage()
+    {
+        element = document.getElementById("myimage")
+        if(element.src.match("bulbon"))
+        {
+            element.src="http://www.w3school.com.cn/i/eg_bulboff.gif";
+        }
+        else
+        {
+            element.src="http://www.w3school.com.cn/i/eg_bulbon.gif";
+        }
+    }
+</script>
+
+<img id = "myimage" onclick="changeImage()" src="http://www.w3school.com.cn/i/eg_bulboff.gif">
+<p>点击灯泡来点亮或者熄灭这盏灯</p>
+</br>
+</br>
+</br>
+</br>
+<h1>我的第一段 javaScript</h1>
+<p id= "demo2">
+    javaScript 能改变Html元素的样式。
+</p>
+<script>
+function myFunction2()
+{
+    x = document.getElementById("demo2");
+    x.style.color="#ff0000";
+
+}
+</script>
+<button type="button" onclick="myFunction2()">点击这里</button>
+</br>
+</br>
+</br>
+</br>
+</br>
+<h1>我的第一段 Javascript</h1>
+<p>请输入数字，如果输入值不是数字，浏览器会弹出提示框。 </p>
+<input id = "demo3" type ="text">
+<script>
+function myFunction3()
+{
+    var x = document.getElementById("demo3").value;
+
+    if(x==""||isNaN(x)) //isNaN() 判断x是不是数值
+    {
+        alert("Not Numeric");
+    }
+}
+</script>
+<button type="button" onclick="myFunction3()">点击这里</button>
+</body>
+</html>
