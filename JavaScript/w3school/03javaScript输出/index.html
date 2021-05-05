@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+        <h1>实例01 My First Web page</h1>
+        <p id="demo">My First Paragraph</p>
+
+        <script>
+        document.getElementById("demo").innerHTML = "My First JavaScript xxx";
+        </script>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<h1>实例02 把&lt;p&gt;元素写到HTML文档输出中：</h1>
+<script>
+document.write("<p>My First JavaScript</p>");
+</script>
+
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<h1>实例03document.write()注意事项</h1>
+<p> document.write()仅向文档输入写入内容，如果文档加载完后执行该函数，则会重写整个html页面</p>
+
+<button type="button" onclick="myFunction3()">点击这里</button>
+<script>
+function myFunction3()
+{
+    document.write("糟糕！文档被你用document.write重写掉了")
+}
+</script>
+
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+
+
+        
+    </body>
+</html>

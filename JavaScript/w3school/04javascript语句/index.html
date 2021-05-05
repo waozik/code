@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+        <h1>案例01 Javascript代码会按照语句顺序被浏览器执行。</h1>
+        <p id="demo">A Paragraph.</p>
+        <div id="MyDiv"> A DIV.</div>
+
+        <script>
+        document.getElementById("demo").innerHTML="Hello World";
+        document.getElementById("MyDiv").innerHTML = "How are you?";
+        </script>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<h1>案例02 函数可以将代码块包含到一起</h1>
+<p id = "myPar"> I am Paragraph.</p>
+<div id = "mydiv2">I am div.</div>
+<script>
+function myFunction()
+{
+document.getElementById("myPar").innerHTML="Hello World";
+document.getElementById("mydiv2").innerHTML = "How are you?";
+}
+
+
+</script>
+<button type="button" onclick="myFunction()">点下这里</button>
+<p>当你点击上面按钮是上面二个元素都会变</p>
+    </body>
+</html>
